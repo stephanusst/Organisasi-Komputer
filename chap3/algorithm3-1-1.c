@@ -1,3 +1,6 @@
+/**************
+  Binary
+**************/
 #include <stdio.h>
 
 void try();
@@ -28,8 +31,8 @@ int main(void){
 
   //Loop
   for (int i = 0; i<width; i++){
-    sum[i]=(x[i]+y[i]+carry[i])%8;
-    carry[i+1]=(x[i]+y[i]+carry[i])/8;
+    sum[i]=(x[i]+y[i]+carry[i])%2;
+    carry[i+1]=(x[i]+y[i]+carry[i])/2;
 
     printf("%d: %d+%d+%d=%d \n", i,x[i],y[i],carry[i], sum[i]);
   }
