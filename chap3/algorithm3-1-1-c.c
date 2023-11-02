@@ -1,13 +1,11 @@
 /**************
  Hexadecimal
 **************/
-#include <stdio.h>
-
-void try();
-
+#include "stdio.h"
 int main(void){
 
   //variable
+  
   int width; 			//fixed-width
   width =3;
 
@@ -24,8 +22,10 @@ int main(void){
   carry[1]=0;
   carry[2]=0;
 
-  printf("x= %x %x %x, y= %x %x %x \n",x[0], x[1], x[2], y[0], y[1], y[2]);
-
+  printf("Addition in Hexadecimal\n");
+  printf("Set Value x: %#x %#x %#x\n",x[2], x[1], x[0]);
+  printf("Set Value y: %#x %#x %#x\n",y[2], y[1], y[0]);
+ 
   //header;
   printf("i: x+y+c=s \n");
 
@@ -36,5 +36,4 @@ int main(void){
 
     printf("%d: %x+%x+%x=%x \n", i,x[i],y[i],carry[i], sum[i]);
   }
-
 }
